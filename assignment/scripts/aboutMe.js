@@ -49,7 +49,9 @@ if(adventurous == true) {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-
+if(luckyNumber == 2 && adventurous == true) {
+  console.log("Roll the dice!");
+}
 
 
 // 15 - Write a conditional that console logs "I can have more pets!" 
@@ -57,6 +59,14 @@ if(adventurous == true) {
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
+if(pets < allowedPets) {
+  console.log("I can have more pets!");
+} else if(pets == allowedPets) {
+  console.log("I have enough pets")
+} else {
+  console.log("Oh no, I have too many pets!");
+}
+
 
 // STRETCH GOALS:
 
