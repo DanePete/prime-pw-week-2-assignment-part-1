@@ -67,7 +67,6 @@ if(pets < allowedPets) {
   console.log("Oh no, I have too many pets!");
 }
 
-
 // STRETCH GOALS:
 
 // 16 - Make a variable called `mostPets` and a conditional that
@@ -75,9 +74,29 @@ if(pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
+let mostPets = 0;
+// if(pets > friendsPets) {
+//   mostPets = pets;
+// } else if(pets < friendsPets) {
+//   mostPets = friendsPets;
+// } else if (pets == friendsPets) {
+//   mostPets = "They are equal";
+// }
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch (mostPets) {
+  case pets > friendsPets:
+    mostPets = pets;
+    break;
+  case pets < friendsPets:
+    mostPets = friendsPets
+    break;
+  case pets == friendsPets:
+    mostPets = "They are equal";
+    break;
+}
 
+console.log(mostPets);
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 
