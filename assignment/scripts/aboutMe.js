@@ -4,6 +4,7 @@ const firstName = "Dane";
 
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 const lastName = "Petersen";
+
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
 const fullName = firstName + " " + lastName;
@@ -75,16 +76,20 @@ if(pets < allowedPets) {
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 let mostPets = 0;
-// if(pets > friendsPets) {
-//   mostPets = pets;
-// } else if(pets < friendsPets) {
-//   mostPets = friendsPets;
-// } else if (pets == friendsPets) {
-//   mostPets = "They are equal";
-// }
+
+console.log(pets);
+console.log(friendsPets);
+
+if(pets > friendsPets) {
+  mostPets = pets;
+} else if(pets < friendsPets) {
+  mostPets = friendsPets;
+} else if (pets == friendsPets) {
+  mostPets = "They are equal";
+}
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-switch (mostPets) {
+switch (true) {
   case pets > friendsPets:
     mostPets = pets;
     break;
